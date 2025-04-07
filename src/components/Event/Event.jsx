@@ -1,27 +1,36 @@
-import { EventItem } from './Event.styled';
-// import { format, formatDistanceStrict } from 'date-fns';
+import { EventItem, EventTitle, Wrapper } from './Event.styled';
+import { formatEventDuration, formatEventStart } from './../../utils'
+import PropTypes from 'prop-types';
 
-// export const formatEventDuration = (start, end) => {
-//     return formatDistanceStrict(Date.parse(start), Date.parse(end));
-// };
 
-// export const formatEventStart = (start) => {
-//     return format(Date.parse(start), 'dd MMMM yyyy, HH:mm');
-// };
+import { FaLocationDot } from "react-icons/fa6";
+import { IoPersonSharp } from "react-icons/io5";
+import { FaCalendarAlt, FaClock } from "react-icons/fa";
+
+
 
 export const Event = ({ name, start, end, location, speaker }) => {
-    // const formattedStart = formatEventStart(start);
-    // const formattedEnd = formatEventStart(end);
-    // const duration = formatEventDuration(start, end);
-
+    const formattedStart = formatEventStart(start)
+    const duration = formatEventDuration(start, end);
     return (
         <EventItem>
-            <h3>{name}</h3>
-            <p><b>Start:</b> {start}</p>
-            <p><b>End:</b> {end}</p>
-            {/* <p><b>Duration:</b> {duration}</p> */}
-            <p><b>Location:</b> {location}</p>
-            <p><b>Speaker:</b> {speaker}</p>
+            <EventTitle>{name}</EventTitle>
+            <Wrapper>
+                <p><FaLocationDot /> {location}</p>
+                <p><IoPersonSharp /> {speaker}</p>
+                <p><FaCalendarAlt /> {formattedStart}</p>
+                <p><FaClock /> {duration}</p>
+            </Wrapper>
         </EventItem>
     );
 };
+
+Event.propTypes = {
+    name: PropTypes.string,
+    start: PropTypes.string,
+    end: PropTypes.string,
+    location: PropTypes.string,
+    speaker: PropTypes.string,
+}
+
+

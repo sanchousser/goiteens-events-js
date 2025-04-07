@@ -1,5 +1,6 @@
 [
     {
+      "id": 1,
       "name": "Protecting the outer rim",
       "location": "Corvus, Jangala",
       "speaker": "Jacob Mercer",
@@ -10,6 +11,7 @@
       }
     },
     {
+      "id": 2,
       "name": "The art of spying",
       "location": "Barad sector, Asharu",
       "speaker": "Artemis Tau",
@@ -20,6 +22,7 @@
       }
     },
     {
+      "id": 3,
       "name": "A smugglers tale",
       "location": "Atzlan, Nachiketa",
       "speaker": "Kai Takeda",
@@ -30,6 +33,7 @@
       }
     },
     {
+      "id": 4,
       "name": "Dealing with the Diktat",
       "location": "Duzhank, Sindria",
       "speaker": "Solomon Fokes",
@@ -40,6 +44,7 @@
       }
     },
     {
+      "id": 5,
       "name": "Inside the Ludd's Hammer",
       "location": "Hybrasil, Culann",
       "speaker": "Adrian Cross",
@@ -50,6 +55,7 @@
       }
     },
     {
+      "id": 6,
       "name": "Beyond the core worlds",
       "location": "Magec, Achaman",
       "speaker": "Apollo Pillai",
@@ -60,6 +66,7 @@
       }
     },
     {
+      "id": 7,
       "name": "Mining for profit",
       "location": "Yma, Qaras",
       "speaker": "Archibald Yurzi",
@@ -70,6 +77,7 @@
       }
     },
     {
+      "id": 8,
       "name": "Deep space horrors",
       "location": "Samarra, Eventide",
       "speaker": "Luke Xamarin",
