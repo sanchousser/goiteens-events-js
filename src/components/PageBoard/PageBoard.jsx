@@ -4,12 +4,12 @@ import { EventsList } from './PageBoard.styled';
 export const PageBoard = ({ events }) => {
   return (
     <EventsList>
-      {events.map(({name, start, end, location, speaker}) => {
+      {events.map(({name, time, location, speaker}) => {
         return (
           <Event
             name={name}
-            start={start}
-            end={end}
+            start={time.start}
+            end={time.end}
             location={location}
             speaker={speaker}
           />
